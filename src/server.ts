@@ -23,7 +23,7 @@ const start = async () => {
     initOptions: {
       express: app,
       onInit: async (cms) => {
-        cms.logger.info(`Admin URL ${cms.getAdminURL}`);
+        cms.logger.info(`Admin URL ${cms.getAdminURL()}`);
       },
     },
   });
