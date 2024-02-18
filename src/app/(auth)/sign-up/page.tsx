@@ -13,6 +13,7 @@ import { AuthCredentialsValidator, TAuthCredentialsValidator } from "@/lib/valid
 import { trpc } from "@/trpc/client";
 import { toast } from "sonner"
 import { useRouter } from "next/navigation";
+import { Input } from "@/components/ui/input";
 
 const Page = () => {
   
@@ -84,7 +85,7 @@ const Page = () => {
               <div className="grid gap-2">
                 <div className="grid gap-1 py-2">
                   <Label htmlFor="email">Email</Label>
-                  <input
+                  <Input
                     {...register("email")}
                     className={cn({
                       "focus-visible:ring-red-500": errors.email,
@@ -100,7 +101,7 @@ const Page = () => {
 
                 <div className="grid gap-1 py-2">
                   <Label htmlFor="password">Password</Label>
-                  <input
+                  <Input
                   {...register("password")}
                   type="password"
                     className={cn({
