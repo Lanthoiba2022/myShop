@@ -54,9 +54,11 @@ const Page = () => {
         router.push("/sell")
         return;
       }
-
+      
       router.push("/");
       router.refresh();
+      
+     
       toast.success("Signed in successfully");
       
     },
